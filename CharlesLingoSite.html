@@ -1,0 +1,195 @@
+<html>
+	<head>
+		<title>Charleslingo</title>
+		<link rel='icon' href='https://i.imgur.com/G6m9W0u.png' type='image/png'>
+	</head>
+	<style>
+		.greenheading{
+			background-color: lightgreen;
+			position: absolute;left: 0px;right: 0px;top: 0px;
+			height: 55px;
+			font-family: sans-serif;
+			font-size: 40px;
+			padding: 2px;
+			align-items: center;
+			padding: 4px;
+			justify-content: center;
+			display: flex
+		}
+		.wholebody{
+			z-index: 1;
+			background-color: lightyellow;
+			position: absolute;left: 0px;right: 0px;top: 65px;bottom: 0px;
+			z-index: 0;
+		}
+		.box1 {
+		    position: absolute;
+		    left: 65px;
+		    top: 80px;
+		    width: 300px;
+		    height: 600px;
+		    background-color: yellowgreen;
+		    border-radius: 50px;
+		    font-family: cursive;
+		    color: white;
+		    display: flex;
+		    align-items: flex-start;
+		    justify-content: center;
+		    font-size: 45px;
+		}
+
+		.box2 {
+		    position: absolute;
+		    left: 429px;
+		    top: 80px;
+		    width: 300px;
+		    height: 600px;
+		    background-color: green;
+		    border-radius: 50px;
+		    font-family: cursive;
+		    color: white;
+		    display: flex;
+		    align-items: flex-start;
+		    justify-content: center;
+		    font-size: 45px;
+		}
+
+		.box3 {
+		    position: absolute;
+		    left: 796px;
+		    top: 80px;
+		    width: 300px;
+		    height: 600px;
+		    background-color: darkgreen;
+		    border-radius: 50px;
+		    font-family: cursive;
+		    color: white;
+		    display: flex;
+		    align-items: flex-start;
+		    justify-content: center;
+		    font-size: 45px;
+		}
+
+		.box4 {
+		    position: absolute;
+		    left: 1163px;
+		    top: 80px;
+		    width: 300px;
+		    height: 600px;
+		    background-color: black;
+		    border-radius: 50px;
+		    font-family: cursive;
+		    color: white;
+		    display: flex;
+		    align-items: flex-start;
+		    justify-content: center;
+		    font-size: 45px;
+		}
+		.image1 {
+			z-index: 3;
+			position: absolute; top: 250px; left: 125px;
+			width: 175px
+		}
+		.image2 {
+			z-index: 3;
+			position: absolute; top: 245px; left: 480px;
+			width: 200px;
+		}
+		.image3 {
+			z-index: 3;
+			position: absolute; top: 245px; left: 855px;
+			width: 185px;
+		}
+		.image4 {
+			z-index: 3;
+			position: absolute; top: 225px; left: 1230px;
+			width: 175px;
+		}
+		.button1 {
+			z-index: 4;
+			position: absolute; top:500px; left: 115px;
+			color: black;
+			background-color: white;
+			height: 100px;
+			width: 200px;
+			border-radius: 10px;
+			font-size: 40px;
+			font-family: monospace;
+		}
+		.button1:hover{
+			background-color: lightgrey;
+		}
+		.button2 {
+			z-index: 4;
+			position: absolute; top:500px; left: 480px;
+			color: black;
+			background-color: white;
+			height: 100px;
+			width: 200px;
+			border-radius: 10px;
+			font-size: 40px;
+			font-family: monospace;
+		}
+		.button2:hover{
+			background-color: lightgrey;
+		}
+		.button3 {
+			z-index: 4;
+			position: absolute; top:500px; left: 845px;
+			color: black;
+			background-color: white;
+			height: 100px;
+			width: 200px;
+			border-radius: 10px;
+			font-size: 40px;
+			font-family: monospace;
+		}
+		.button3:hover{
+			background-color: lightgrey;
+		}
+		.button4 {
+			z-index: 4;
+			position: absolute; top:500px; left: 1210px;
+			color: black
+;			background-color: white;
+			height: 100px;
+			width: 200px;
+			border-radius: 10px;
+			font-size: 40px;
+			font-family: monospace;
+		}
+		.button4:hover{
+			background-color: lightgrey;
+		}
+	</style>
+	<body>
+		<div class='greenheading'>Charleslingo</div>
+		<div class='wholebody'></div>	
+		<div class='box1'><br>Addition</div>
+		<div class='box2'><br>Subtraction</div>
+		<div class='box3'><br>Multiplication</div>
+		<div class='box4'><br>Division</div>
+		<img src='https://cdn-icons-png.flaticon.com/128/5969/5969527.png' class="image1">	
+		<img src='https://cdn-icons-png.flaticon.com/128/1991/1991198.png' class="image2">	
+		<img src='https://cdn-icons-png.flaticon.com/128/2405/2405334.png' class="image3">
+		<img src='https://i.imgur.com/3UHMQUQ.png' class="image4">
+		<button class="button1" onclick="button1action()">Start!</button>
+		<button class="button2" onclick="button2action()">Start!</button>
+		<button class="button3" onclick="button3action()">Start!</button>
+		<button class="button4" onclick="button4action()">Start!</button>
+		<script>
+			function button1action(){
+				window.location.href = 'file:///W:/Ng%20Jen%20Sen/Javascript%20Folder/CharlesLingo/CharlesLingoEasy.html'
+			}
+			function button2action(){
+				window.location.href = 'file:///W:/Ng%20Jen%20Sen/Javascript%20Folder/CharlesLingo/CharlesLingoNormal.html'
+			}
+			function button3action(){
+				window.location.href = 'file:///W:/Ng%20Jen%20Sen/Javascript%20Folder/CharlesLingo/CharlesLingoHard.html'
+			}			
+			function button4action(){
+				window.location.href = 'file:///W:/Ng%20Jen%20Sen/Javascript%20Folder/CharlesLingo/CharlesLingoImpossible.html'
+			}
+		</script>
+	</body>
+</html>	

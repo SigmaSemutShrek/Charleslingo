@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title>Charleslingo</title>
+		<link rel='icon' href='https://i.imgur.com/G6m9W0u.png' type='image/png'>
+	</head>
+	<style>
+		.greenheading{
+			background-color: lightgreen;
+			position: absolute;left: 0px;right: 0px;top: 0px;
+			height: 55px;
+			font-family: sans-serif;
+			font-size: 40px;
+			padding: 2px;
+			align-items: center;
+			padding: 4px;
+			justify-content: center;
+			display: flex;
+			z-index: 1;
+		}
+		.wholebody{
+			background-color: lightyellow;
+			position: absolute;left: 0px;right: 0px;top: 65px;bottom: 0px;
+			z-index: 0;
+			font-family: candara;
+			padding-left: 675px;
+			padding-top: 75px;
+			font-size: 45px;
+			z-index: 2;
+		}
+		.quizstartbutton{
+			background-color: blue;
+			color: whitesmoke;
+			font-size: 50px;
+			font-family: verdana;
+			position: absolute; top: 200px; left: 655px;
+			border-radius: 50px;
+			width: 825px;
+			height: 80px;
+			z-index: 2;
+		}
+		.quizstartbutton:hover{
+			background-color: darkblue;
+		}
+		.image1{
+			position: absolute; left: 200px; top: 125px;
+			z-index: 2;
+			max-width: 100%;
+			width: 500px;
+		}
+		.image2{
+			position: absolute; left: 800px; top: 300px;
+			z-index: 3;
+			max-width: 100%;
+			width: 500px;
+		}
+		.image3{
+			position: absolute; left: 50px; top: 100px;
+			z-index: 3;
+			max-width: 100%;
+			width: 300px;
+		}
+		.brainbig{
+			position: absolute; left: 100px; top: 215px;		
+			z-index: 4;
+			font-family: cursive;	
+			font-size: 25px;
+		}
+	</style>
+	<body>
+		<div class='greenheading'>Charleslingo</div>
+		<div class='wholebody'><b><u>Click the button below to take the quiz!</u></b></div>
+		<button class='quizstartbutton' onclick='gotoQuiz()'>Take the quiz!</button>
+		<img src="https://i.imgur.com/G6m9W0u.png" class='image1'>
+		<img src='https://c.tenor.com/IpT37hF7X0YAAAAd/tenor.gif' class="image2">
+		<img src='https://i.imgur.com/dy5nGxI.png' class="image3">		
+		<div class='brainbig'>My brain is <br> getting bigger. <br> I can feel it!</div>
+		<script>
+			function gotoQuiz(){
+				window.location.href = 'file:///W:/Ng%20Jen%20Sen/Javascript%20Folder/CharlesLingo/CharlesLingoSite.html'
+			}
+		</script>
+	</body>	
+</html>
