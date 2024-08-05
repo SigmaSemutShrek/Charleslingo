@@ -35,7 +35,7 @@
 			justify-content: center;
 			height: 125px;
 		    transform: translate(-50%, -50%);
-			width: 500px;
+			width: 550px;
 			border: 5px solid black;
 			border-radius: 50px;
 			background-color: greenyellow;
@@ -147,14 +147,14 @@
 			let clickAllowed = true
 			function fillthebox(){
 				ansbox = Math.floor(Math.random() * 4) + 1
-				document.getElementById('box' + ansbox).innerHTML = firstnum - secondnum
+				document.getElementById('box' + ansbox).innerHTML = firstnum / secondnum
 			}
 
 			let setCheck = new Set()
 			function filltherest(){
 				setCheck.clear()
 				while (setCheck.size < 4){
-					let box = Math.floor(Math.random() * 500) + 1
+					let box = Math.floor(Math.random() * 300) + 1
 					if (box !== firstnum + secondnum){
 						setCheck.add(box)
 					}
@@ -172,10 +172,10 @@
 					document.getElementById('tick').style.display = 'none';
 					document.getElementById('wrong').style.display = 'none';
 					do{
-					firstnum = Math.floor(Math.random() * 1000) + 1
+					firstnum = Math.floor(Math.random() * 10000) + 1
 					secondnum = Math.floor(Math.random() * 1000) + 1
-					} while (firstnum - secondnum < 0)
-					document.getElementById('questiontext').innerHTML = firstnum + ' - ' + secondnum 
+					} while (firstnum % secondnum !== 0)
+					document.getElementById('questiontext').innerHTML = firstnum + ' ÷ ' + secondnum 
 					filltherest()
 					fillthebox()
 					clickAllowed = true
