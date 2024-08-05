@@ -17,6 +17,7 @@
 			justify-content: center;
 			display: flex;
 			z-index: 0;
+			border: 2px solid black;
 		}
 		.wholebody, .bodyend{
 			z-index: 1;
@@ -109,6 +110,20 @@
 		.endbutton:hover{
 			background-color: rgb(93, 0, 255);
 		}
+		.number{
+            background-color: skyblue;
+            border-radius: 50%;
+            width: 105px;
+            height: 105px;
+            position: absolute; top: 1%; left: 1%;
+            z-index: 100;
+            font-family: Verdana;
+            font-size: 75px;
+            text-align: center;
+			padding: 15px;
+            border: 5px solid black;
+			display: block;
+        }
 	</style>head
 	<body>
 		<div class='greenheading'>Charleslingo</div>
@@ -123,6 +138,7 @@
 		<div class="bodyend" id="bodyend"></div>
 		<div class="text" id="text">Test</div>
 		<button class="endbutton" id="endbutton" onclick="endbuttonclick()">Play Again!</button>
+		<div id='number' class="number">0</div>
 		<script type="text/javascript">
 			let firstnum, secondnum, firstnumdraft, secondnumdraft
 			let ansbox
@@ -152,6 +168,7 @@
 			function getquestion(){
 				if (questionnum !== 10){
 					questionnum++
+					document.getElementById('number').innerHTML = questionnum
 					document.getElementById('tick').style.display = 'none';
 					document.getElementById('wrong').style.display = 'none';
 					do{
@@ -189,6 +206,7 @@
 					}
 				}
 				function end(){
+					document.getElementById('number').style.display = 'none'
 					document.getElementById('bodyend').style.display= 'block'
 					document.getElementById('bodyend').style.zIndex = 4
 					document.getElementById('text').innerHTML = 'Your score is ' + correctnum + '/' + questionnum
@@ -196,7 +214,7 @@
 					document.getElementById('endbutton').style.display = 'block'
 				}
 				function endbuttonclick(){
-					window.location.href = 'https://raw.githack.com/SigmaSemutShrek/Charleslingo/main/CharlesLingo.html'
+					window.location.href = 'file:///W:/Ng%20Jen%20Sen/Javascript%20Folder/CharlesLingo/CharlesLingo.html'
 				}
 			getquestion()
 		</script>
