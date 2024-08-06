@@ -19,6 +19,7 @@
 			justify-content: center;
 			display: flex;
 			z-index: 1;
+			border: 2px solid black;
 		}
 		.quizstartbutton{
 			background-color: blue;
@@ -75,9 +76,9 @@
 		.playbutton:hover{
 			width: 650px;
 			height: 70px;
-			padding-top: 25px;
+			padding-top: 20px;
 			box-shadow: inset 0 0 20px rgb(255, 187, 0);
-			font-size: 35px;
+			font-size: 40px;
 		}
 		.volumeup{
 			font-size: 35px;
@@ -86,11 +87,18 @@
 			color: black;
 			position: absolute; bottom: 10px; right: 10px;
 		}
+		.prompt{
+			font-family: 'Lucida Sans Regular';
+			font-size: 45px;
+			color: black;
+			position: absolute; top: 130px; right: 38px;
+			z-index: 2;
+		}
 	</style>
 	<body>
 		<div class="playbutton" onclick='playbutton()'>Click here for a surprise!</div>
-		<div class='greenheading'>Charleslingo</div>
-		<div class='wholebody'><b><u>Click the button below to take the quiz!</u></b></div>
+		<div class='greenheading'>Charleslingo</div>	
+		<div class='prompt'><b><u>Click the button below to take the quiz!</u></b></div>
 		<div class='volumeup'>🔉Please increase your device volume! </div>
 		<button class='quizstartbutton' onclick='gotoQuiz()'>Take the quiz!</button>
 		<img src="https://i.imgur.com/G6m9W0u.png" class='image1'>
